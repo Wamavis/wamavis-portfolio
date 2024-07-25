@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    font-family: "Roboto", sans-serif;
+}
+/*Scroll bar*/
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: rgb(177,173,173);
+}
+body{
+    background-color: #FFFFFF;
+}
+h1 a {
+    text-decoration: 0;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+nav ul li a{
+    text-decoration: 0;
+    color: #000;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+header ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 25px 0 ;
+}
+header nav ul{
+    display: flex;
+}nav ul li a {
+    margin-left: 50px;
+    padding-bottom: 3px;
+    position: relative;
+}
+#projet-li{
+    padding-left: 15%;
+    padding-right: 15%;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+section{
+    margin: 0 10%;
+}
+section div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8% 8% 0 8%;
+    padding: 25px 0;
+    border-top: 1px solid #000;
+}
+section ul{
+    padding: 2%;
+}
+section h3, h4, p{
+    margin: 1%;
+}
+footer img{
+    width: 30px;
+    height: 30px;
+    padding: 3%;
+}
