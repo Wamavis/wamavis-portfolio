@@ -1,0 +1,540 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  color: black;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: auto;
+  margin: auto;
+}
+.header a {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.header a:hover {
+  color: rgba(0, 10, 6, 0.5);
+}
+.header h1 {
+  margin: 1%;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  text-wrap: nowrap;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  margin-top: 1.5%;
+}
+
+.header ul li {
+  padding: 3px 25px;
+}
+.header ul li + li {
+  border-left: 1px solid black;
+}
+.about {
+  width: auto;
+  margin: auto;
+  margin-top: 10%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.about__image {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__image--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.about__description {
+  text-align: center;
+  margin-top: 8%;
+}
+.about__description .about__description--greeting {
+  font-size: 2.5em;
+  margin-bottom: 5%;
+}
+.about__description .about__description--about-me {
+  font-size: 1.3em;
+  margin-bottom: 5%;
+}
+.about__description .about__description--paragraph {
+  line-height: 1.8em;
+  font-size: 1.1em;
+  margin-bottom: 10%;
+}
+
+.about__description a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 3%;
+  text-decoration: none;
+}
+
+.about__description .btn {
+  width: 100%;
+  height: 100%;
+  font-size: 1.1em;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.about__description .btn-yellow {
+  background-color: #eea304;
+}
+
+.about__description .btn-red {
+  background-color: #e03a25;
+}
+.about__description .btn-skyblue {
+  background-color: #80d8da;
+}
+.footer .footer--sociallinks a {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  margin: 0 3%;
+}
+
+.footer .footer--sociallinks img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer {
+  width: auto;
+  border-top: 2px solid rgba(0, 10, 6, 0.5);
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.footer div {
+  margin: 5%;
+}
+.footer h3 {
+  margin: 2%;
+  font-size: 1.3em;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer .footer--phonenumber a:hover,
+.footer--email a:hover {
+  color: rgba(0, 10, 6, 0.5);
+}
+
+/* 
+==================================================================
+Version mobile page CV
+==================================================================
+*/
+
+.cv {
+  width: auto;
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding: 0 2%;
+}
+.cv ul {
+  margin-left: 2em;
+  line-height: 1.5em;
+}
+.cv h2,
+.cv h3 {
+  margin: 10% 0;
+}
+.cv p {
+  margin: 3% 0;
+  line-height: 1.5em;
+}
+.cv__languages,
+.cv__skills,
+.cv__academic-backround {
+  border-top: 1px solid black;
+  margin-bottom: 10%;
+}
+.cv__workeperience {
+  margin-bottom: 10%;
+}
+
+/* 
+===================================================================
+Version mobile de la page projet
+===================================================================
+*/
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project {
+  width: auto;
+  margin: auto;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.project h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
+}
+.project h2,
+.project p {
+  margin: 5% 0;
+}
+
+.project p {
+  line-height: 1.5em;
+}
+
+/* 
+=====================================================================
+Version mobile page contact
+=====================================================================
+*/
+.contact {
+  width: auto;
+  margin: auto;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-top: 5%;
+}
+label,
+button {
+  display: block;
+  margin-bottom: 1.2em;
+}
+.contact__social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 3%;
+}
+
+.contact__social-link a {
+  text-decoration: none;
+}
+.contact__social-link a:hover {
+  color: rgba(0, 10, 6, 0.5);
+}
+.contact h2,
+.contact h3,
+.contact p {
+  margin: 1% 0;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 10%;
+}
+input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 5%;
+  font-size: 1.3em;
+  border: 2px solid black;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+}
+button {
+  background-color: #eea303;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 3%;
+}
+
+/* 
+=====================================================================
+_____________________________________________________________________
+
+=====================================================================
+
+Version tablette
+
+=====================================================================
+_____________________________________________________________________
+
+=====================================================================
+*/
+
+@media (min-width: 550px) and (max-width: 960px) {
+  .header {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .about {
+    width: auto;
+  }
+  .about__description {
+    width: 85%;
+  }
+  .about__description a {
+    margin: 3%;
+  }
+  .about__description .about__description--paragraph {
+    margin-bottom: 5%;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 25%;
+    gap: 5%;
+  }
+  .project h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    grid-column: 1/3;
+  }
+  .cv__workeperience--backendphpnodejs,
+  .cv__workeperience--backendpython,
+  .cv__workeperience--frontendreactjs,
+  .cv__academic-backround div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cv h2,
+  .cv h3 {
+    margin: 5% 0;
+  }
+  .cv__languages,
+  .cv__skills,
+  .cv__academic-backround {
+    margin-bottom: 8%;
+  }
+
+  .contact__social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .contact__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+  }
+  .contact__form--submitbtn {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5%;
+  }
+  .contact__form input,
+  .contact__form textarea {
+    border: 2px solid black;
+  }
+  button {
+    height: 100px;
+    width: 100px;
+    margin-left: 0;
+  }
+  @media (min-width: 705px) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-wrap: nowrap;
+      gap: 1%;
+    }
+  }
+
+  .footer div {
+    margin: 0;
+  }
+}
+
+@media (min-width: 961px) {
+  .header {
+    margin: 0 10%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header h1 {
+    font-size: 2.5em;
+  }
+  .header a {
+    font-size: 1.5em;
+  }
+  .about {
+    flex-direction: row;
+    margin: 5% 10%;
+    gap: 10%;
+  }
+  .about__image {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__description {
+    text-align: left;
+  }
+  .about__description .about__description--greeting {
+    font-size: 3.5em;
+    margin-bottom: 2%;
+  }
+  .about__description .about__description--about-me {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+  .about__description .about__description--paragraph {
+    line-height: 1.8em;
+    font-size: 1.3em;
+  }
+
+  .about__description a {
+    width: 100px;
+    height: 100px;
+  }
+  .about__description--paragraph {
+    margin-bottom: 0 !important;
+  }
+  .footer {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer div {
+    margin: 2%;
+  }
+  .footer p {
+    font-size: 1.3em;
+  }
+  .footer h3 {
+    margin: 2%;
+    font-size: 1.5em;
+    text-wrap: nowrap;
+  }
+  .cv {
+    margin: 5% 10%;
+  }
+  .cv__workeperience--backendphpnodejs,
+  .cv__workeperience--backendpython,
+  .cv__workeperience--frontendreactjs,
+  .cv__academic-backround div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cv h2,
+  .cv h3 {
+    margin: 3% 0;
+    font-size: 1.5em;
+  }
+  .cv__languages,
+  .cv__skills,
+  .cv__academic-backround,
+  .cv__workeperience {
+    margin-bottom: 3%;
+  }
+  .cv p {
+    margin: 1% 0;
+    font-size: 1.3em;
+  }
+  .cv ul {
+    font-size: 1.3em;
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    margin: 0 10%;
+    margin-bottom: 25%;
+    gap: 5%;
+  }
+  .project p {
+    font-size: 1.3em;
+  }
+  .project h2 {
+    font-size: 2em;
+  }
+  .project h1 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-bottom: 2%;
+    grid-column: 1/3;
+    font-size: 3em;
+  }
+  .contact {
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact__social-link {
+    align-items: flex-start;
+  }
+  .contact__social-link h2 {
+    font-size: 3em;
+    margin-bottom: 8%;
+  }
+  .contact__social-link h3 {
+    font-size: 2em;
+    margin-bottom: 8%;
+  }
+  .contact__social-link p {
+    font-size: 1.3em;
+    margin-bottom: 5%;
+  }
+  .contact__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+  }
+  .contact__form label {
+    font-size: 1.3em;
+    margin-bottom: 1.5%;
+  }
+  .contact__form input,
+  .contact__form textarea {
+    border: 2px solid black;
+  }
+  .contact__form button {
+    height: 100px;
+    width: 100px;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  .contact__form--submitbtn {
+    padding-top: 15%;
+  }
+}
